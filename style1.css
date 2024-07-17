@@ -1,0 +1,160 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-image: url(https://images.news18.com/ibnlive/uploads/2022/07/shutterstock_1498748855-16569979084x3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.main{
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.overlay{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.53);
+}
+.top nav{
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 7vw;
+}
+.top nav h1{
+  font-size: 2vw;
+  font-weight: 700;
+}
+.top .navleft{
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+}
+.top .navleft h4{
+  cursor: context-menu;
+  font-size: 1.2vw;
+  font-weight: lighter;
+}
+.top .navleft h4:hover{
+  border-bottom: 2px solid red;
+}
+.top .navleft button{
+  font-size: 1.1vw;
+  padding: 0.5vw 1vw;
+  border: none;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+}
+.top .navleft i{
+  color: white;
+  font-size: 2vw;
+  display: none;
+}
+.bottom{
+  height: calc(100% - 80px);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+}
+.bottom .content{
+  text-align: center;
+}
+.bottom .content h3{
+  font-size: 2vw;
+}
+.bottom .content h2{
+  font-size: 3vw;
+  padding: 1vw 0;
+}
+.bottom .content button{
+  font-size: 1.4vw;
+  padding: 0.5vw 1vw;
+  border: none;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+}
+.bottom .content button:hover{
+  background-color: white;
+  color: red;
+  transition: all ease-in-out 0.3s;
+}
+.sidenav{
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 25%;
+  background-color: white;
+}
+.sidenav .navbtn{
+  padding: 4vw 2vw;
+}
+.sidenav .navbtn h4{
+  cursor: context-menu;
+  text-align: center;
+  padding: 10px 0px;
+}
+.sidenav .navbtn button{
+  margin: 1vw 4vw;
+  padding: 0.5vw 1vw;
+  border: none;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  body {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+  }
+  .top nav{
+    padding: 0 9vw;
+    height: 70px;
+  }
+  .overlay{
+    background-size: cover;
+  }
+  .top nav h1{
+    font-size: 5vw;
+  }
+  .top .navleft h4{
+    display: none;
+  }
+  .top .navleft button{
+    display: none;
+  }
+  .top .navleft i{
+    display: block;
+    font-size: 4vw;
+  }
+  .bottom .content h3{
+    font-size: 5vw;
+  }
+  .bottom .content h2{
+    font-size: 8vw;
+    padding-bottom: 30px;
+    padding-top: 10px;
+  }
+  .bottom .content button{
+    font-size: 3.5vw;
+  }
+}
